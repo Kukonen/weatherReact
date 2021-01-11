@@ -7,13 +7,16 @@
 .nameSite {
     color: white;
     font-size: 24px;
-    cursor: default;
+    text-decoration: none;
+}
+.nameSite:hover {
+    color: #052F6D;
 }
 .changeCityLink {
     font-size: 20px;
     margin-left: 50px;
     color: white;
-    cursor: pointer;
+    text-decoration: none;
 }
 .changeCityLink:hover {
     color: #052F6D	;

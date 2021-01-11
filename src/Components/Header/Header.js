@@ -1,17 +1,16 @@
 import React from 'react'
 
 import './Header.css'
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
         <div className="Header">
-            <span className="nameSite">
-                Weather!!!
-            </span>
-            <span className="changeCityLink">England</span>
-            <span className="changeCityLink">USA</span>
-            <span className="changeCityLink">Russia</span>
-            <span className="changeCityLink">Ukraine</span>
+            <Link to="/" className="nameSite">Weather!!! </Link>
+            <Link to="/England" className="changeCityLink">England</Link>
+            <Link to="/USA" className="changeCityLink">USA</Link>
+            <Link to="/Russia" className="changeCityLink">Russia</Link>
+            <Link to="/Ukraine" className="changeCityLink">Ukraine</Link>
         </div>
     )
 }

@@ -1,0 +1,33 @@
+.Start {
+    padding-top: 100px;
+}
+
+.startIcon {
+    display: table-cell;
+    width: 50%;
+    background-image: url("./cloud.svg");
+    background-size: 100% 100%;
+}
+.startAbout {
+    display: table-cell;
+    width: 50%;
+    text-align: center;
+
+}
+.startDescription {
+    text-align: center;
+    margin-top: 100px;
+}
+.startDescriptionSpan {
+    font-family: Roboto;
+    font-size: 20px;
+}
+.startAboutSpan {
+    font-family: Roboto;
+    font-size: 34px;
+}
+.startAboutSpanTitle {
+    font-family: Roboto;
+    font-size: 30px;
+    color: #6A94D4;
+}
