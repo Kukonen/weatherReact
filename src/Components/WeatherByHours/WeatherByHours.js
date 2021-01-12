@@ -1,5 +1,8 @@
 import React from "react";
 
+import './WeatherByHours.css'
+
+
 const WeatherByHours = () => {
     return (
         <div className="WeatherByHours">
