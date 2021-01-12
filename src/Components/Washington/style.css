@@ -1,0 +1,19 @@
+.descriptionWeatherMain {
+    padding-top: 0;
+}
+.descriptionWeatherPictureDiv {
+    display: table-cell;
+}
+img {
+    width: 400px;
+    height: 400px;
+}
+.descriptionWeather {
+    width: 400px;
+    height: 400px;
+}
+.descriptionWeatherTitle {
+    color: #6A94D4;
+    font-size: 34px;
+    font-family: Roboto;
+}

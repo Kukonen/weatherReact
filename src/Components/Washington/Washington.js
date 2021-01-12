@@ -1,8 +1,7 @@
 import React from "react";
 import WeatherApi from "../../Services/WeatherApi";
-import WeatherByHours from "../WeatherByHours/WeatherByHours";
 
-
+import './style.css'
 
 const Washington = () => {
 
@@ -10,10 +9,20 @@ const Washington = () => {
 
     const weather = new WeatherApi();
 
-    console.log(weather.getTemperature(city))
+    let precipitation =  weather.getPrecipitation(city)
+    let temperature = weather.getTemperature(city);
 
-    return <div>
-        <WeatherByHours />
+    console.log(precipitation);
+    console.log(temperature)
+
+    return <div className="descriptionWeatherMain">
+        <div className="descriptionWeather">
+            <span className="descriptionWeatherTitle">Today  in outdoors!!!</span>
+        </div>
+        <div>
+            <span className="descriptionWeatherTitle">Temperature is </span>
+        </div>
+
     </div>
 }
 

@@ -5,8 +5,8 @@ export default class WeatherApi{
 
     //Washington, D.C.
 
-    getAllValue(city){
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},uk&appid=e0a3c4228e83686771a8daa7a334a86e`).then(
+    async getAllValue(city){
+        fetch(`${this.defaultUrlStart}${city},${this.defaultUrlEnd}`).then(
             res => {
                 return res.json();
             }).then(data => {
@@ -15,8 +15,8 @@ export default class WeatherApi{
         })
     }
 
-    getTemperature(city){
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},uk&appid=e0a3c4228e83686771a8daa7a334a86e`).then(
+    async getTemperature(city){
+        fetch(`${this.defaultUrlStart}${city},${this.defaultUrlEnd}`).then(
             res => {
                 return res.json();
             }).then(data => {
@@ -25,9 +25,13 @@ export default class WeatherApi{
         })
     }
 
-    async getWeathByCity(url){
-        const res = await fetch(url);
-        const body = await res.json();
-        return body
+    async getPrecipitation(city){
+        fetch(`${this.defaultUrlStart}${city},${this.defaultUrlEnd}`).then(
+            res => {
+                return res.json();
+            }).then(data => {
+            console.log(data.weather[0].main);
+            return data.weather[0].main;
+        })
     }
 }

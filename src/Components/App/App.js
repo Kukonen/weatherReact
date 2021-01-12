@@ -3,13 +3,11 @@ import Header from "../Header/Header";
 import {BrowserRouter, Route} from "react-router-dom";
 import Start from "../Start/Start";
 import London from "../London/London";
-import Take from "../Take/Take";
 import Washington from "../Washington/Washington";
 import Moscow from "../Moscow/Moscow";
 import Kiev from "../Kiev/Kiev";
 
 const App = () => {
-    Take();
     return (
 
         <div>
